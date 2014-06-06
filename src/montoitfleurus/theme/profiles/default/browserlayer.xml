@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<layers>
+    <layer name="montoitfleurus.theme"
+           interface="montoitfleurus.theme.interfaces.ICustomTheme" />
+</layers>
