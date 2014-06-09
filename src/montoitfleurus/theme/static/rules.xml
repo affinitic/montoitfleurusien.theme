@@ -37,21 +37,27 @@
 
     <replace css:content-children="#portal-personaltools-wrapper"
              css:theme-children="#personal-tools" />
-        
+
     <replace css:content-children="#portal-logo"
              css:theme-children="#portal-logo" />
+
+    <replace css:content-children="#portal-searchbox"
+             css:theme-children="#search-engine" />
 
     <replace css:content-children="#portal-column-one"
              css:theme-children="#left-column" />
 
+    <replace css:content-children="#portal-column-two"
+             css:theme-children="#right-column" />
+
     <replace css:content-children="#portal-column-content"
              css:theme-children="#main-column"
              if="$have_portlets" />
-    
+
     <replace css:content-children="#portal-column-content"
              css:theme-children="#main-column-large"
              if="$have_no_portlet" />
-    
+
     <replace css:content-children="#portal-colophon"
              css:theme-children="#colophon" />
 
