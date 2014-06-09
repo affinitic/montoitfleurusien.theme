@@ -29,8 +29,16 @@
         theme-children="/html/head"
         />
 
-    <copy attributes="xmlns lang xml:lang" content="/html" theme="/html" />
-    <copy attributes="class id dir" content="/html/body" theme="/html/body" />
+    <copy attributes="xmlns lang xml:lang"
+          content="/html"
+          theme="/html" />
+    <copy attributes="class id dir"
+          content="/html/body"
+          theme="/html/body" />
+    <!-- Logo link -->
+    <copy attributes="href"
+          css:content="#portal-logo"
+          css:theme="#portal-logo .logo-link" />
 
     <replace css:content-children="#portal-siteactions"
              css:theme-children="#portal-siteactions" />
@@ -47,15 +55,15 @@
     <replace css:content-children="#portal-column-one"
              css:theme-children="#left-column" />
 
+    <replace css:content-children="#portal-column-content"
+             css:theme-children="#content-text"
+             if="$have_portlets" />
+
     <replace css:content-children="#portal-column-two"
              css:theme-children="#right-column" />
 
     <replace css:content-children="#portal-column-content"
-             css:theme-children="#main-column"
-             if="$have_portlets" />
-
-    <replace css:content-children="#portal-column-content"
-             css:theme-children="#main-column-large"
+             css:theme-children="#content-text"
              if="$have_no_portlet" />
 
     <replace css:content-children="#portal-colophon"

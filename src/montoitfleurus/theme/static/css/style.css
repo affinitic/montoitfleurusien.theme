@@ -105,6 +105,9 @@ left:5px;
 #portal-siteactions{
 position:relative;
 top:-115px;
+width:500px;
+height:0px;
+margin:auto;
 }
 
 #portal-siteactions li{
@@ -132,7 +135,7 @@ background-color:#eee;
 
 #personal-tools{
 position:relative;
-top:-170px;
+top:-143px;
 left:975px;
 width:150px;
 }
@@ -144,7 +147,7 @@ text-align:center;
 
 hr#border-personal-tools{
 position:relative;
-top:-162px;
+top:-135px;
 left:980px;
 width:180px;
 margin:8px 0px 9px 0px;
@@ -163,7 +166,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 #search-engine{
 position:relative;
 left:670px;
-top:-125px;
+top:-110px;
 width:300px;
 height:50px;
 text-align:center;
@@ -276,21 +279,8 @@ float:left;
 float:right;
 }
 
-#portlet-coordonnee,
-#calendrier,
-#faq,
-#plan{
-margin:-5px 0 20px -2px;
-padding-left:8px;
-min-height:150px;
-}
-
 #actualite h2,
-#evenement h2,
-#portlet-coordonnee h2,
-#calendrier h2,
-#faq h2,
-#plan h2{
+#evenement h2{
 color:#9d0003;
 border-bottom:1px dotted #555;
 font-size:1em;
@@ -298,21 +288,22 @@ margin:5px 0px 0px 0px;
 text-transform:uppercase;
 }
 
-#portlet-coordonnee p,
-#calendrier p,
-#faq p,
-#plan p{
-font-size:0.8em;
-}
 
+/*** COLONNE DROITE ***/
 aside#right-column{
 float:right;
 width:280px;
 min-height:600px;
-border:1px solid #f00;
 }
 
-.section-col-droite{
+.portlet-colonne-droite,
+aside#right-column dl.portletCalendar{
+width:95%;
+font-size:0.8em;
+border:1px solid #ddd;
+border-radius:12px 0px 0px 12px;
+margin:auto;
+margin-bottom:6px;
 background: -moz-linear-gradient(-45deg,  rgba(198,196,197,0.5) 0%, rgba(127,125,126,0) 36%, rgba(0,0,0,0) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(198,196,197,0.5)), color-stop(36%,rgba(127,125,126,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(-45deg,  rgba(198,196,197,0.5) 0%,rgba(127,125,126,0) 36%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
@@ -320,6 +311,41 @@ background: -o-linear-gradient(-45deg,  rgba(198,196,197,0.5) 0%,rgba(127,125,12
 background: -ms-linear-gradient(-45deg,  rgba(198,196,197,0.5) 0%,rgba(127,125,126,0) 36%,rgba(0,0,0,0) 100%); /* IE10+ */
 background: linear-gradient(135deg,  rgba(198,196,197,0.5) 0%,rgba(127,125,126,0) 36%,rgba(0,0,0,0) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80c6c4c5', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#portlet-coordonnee,
+#portlet-faq,
+#portlet-plan{
+padding-left:8px;
+min-height:150px;
+}
+
+aside#right-column dt.portletHeader,
+aside#right-column #portlet-coordonnee.portletHeaderDB,
+aside#right-column #portlet-faq.portletHeaderDB,
+aside#right-column #portlet-plan.portletHeaderDB{
+border-radius:12px 0px 0px 12px;
+background-color:transparent;
+color:#9d0003;
+}
+
+#portlet-coordonnee h2,
+#portlet-faq h2,
+#portlet-plan h2{
+height:28px;
+color:#9d0003;
+line-height:26px;
+border-bottom:1px dotted #555;
+font-size:1em;
+margin:5px 0px 5px 0px;
+text-transform:uppercase;
+padding-left:6px;
+}
+
+#portlet-coordonnee p,
+#portlet-faq p,
+#portlet-plan p{
+margin:5px 0px;
 }
 
 #coord-adresse,
@@ -361,7 +387,7 @@ line-height:30px;
 }
 
 
-
+/*** FOOTER ***/
 footer{
 margin-top:3px;
 background-color:#c3c3c3;
@@ -411,10 +437,3 @@ footer nav#menu-inferieur ul,
 margin:0px;
 padding:0px;
 }
-
-
-
-
-
-
-

@@ -5,14 +5,14 @@
 <body>
 <div metal:define-macro="portlet">
     <div  class="portlet-colonne-droite">
-        <dl id="portlet-faq">
+        <dl id="portlet-plan">
             <dt class="portletHeaderDB">
                 <span class="portletTopLeft"></span>
                 <span class="portletTopRight"></span>
-                <h2 class="rouge-fleurus">faq</h2>
+                <h2 class="rouge-fleurus">Plan</h2>
             </dt>
             <dt class="portletItem">
-              <p>Ici la liste des questions</p>
+                <p>Implémentation des cités</p>
             </dt>
         </dl>
     </div>
