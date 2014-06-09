@@ -1,36 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-  	<title>Site pour Mon Toit Fleurusien</title>
-  	<meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-
-  <body>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Mon Toit Fleurusien</title>
+<link rel="icon"
+      type="image/gif"
+      href="images/favicon.gif" />
+<link href="style.css"
+      type="text/css"
+      rel="stylesheet">
+</head>
+<body>
     <div id="wrapper">
-        <div id="header">
-            <div id="portal-siteactions"></div>
-            <div id="portal-logo"></div>
-            <div id="personal-tools"></div>
-        </div><!--header-->
+    <header>
+        <div id="portal-logo"></div>
+        <div id="portal-titre">
+            <span class="rouge-fleurus gras">Mon Toit</span>
+            <span class="blanc">Fleurusien.</span>
+        </div>
+        <div id="portal-siteactions"></div>
 
+        <hr id="border-personal-tools" />
+        <div id="personal-tools"></div>
+
+        <div id="search-engine"></div>
+    </header>
+    <div id="main-content">
+        <section id="content-text">
+            <div id="deco-sup"></div>
+            <nav id="menu-sup">
+                <section id="presentation-sup" class="section-nav-sup">
+                    <h2>Présentation</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit.
+                    </p>
+                </section>
+                <section id="devenir-locataire-sup" class="section-nav-sup">
+                    <h2>Devenir locataire</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit.
+                    </p>
+                </section>
+                <section id="etre-locataire-sup" class="section-nav-sup">
+                    <h2>Vous êtes locataire</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit.
+                    </p>
+                </section>
+                <div class="visualClear"></div>
+            </nav>
+            <section id="news-event">
+                <article id="actualite">
+                    <h2>Actualites</h2>
+
+                </article>
+                <article id="evenement">
+                    <h2>Evénements</h2>
+                </article>
+                <div class="visualClear"></div>
+            </section>
+        </section>
+        <aside id="right-column">
+            <section id="coordonnee" class="section-col-droite">
+                <h2>coordonnées</h2>
+                MON TOIT
+                <p id="coord-adresse">
+                    Rue Brennet, 36<br />
+                    6220 Fleurus
+                </p>
+                <p id="coord-telephone">
+                    O71 82 71 60
+                </p>
+                <p id="coord-fax">
+                    071 80 07 60
+                </p>
+                <p id="coord-email">
+                    info@montoit.be
+                </p>
+                <p id="coord-heures-ouvertures">
+                    Heures d'ouvertures
+                </p>
+            </section>
+            <section id="calendrier" class="section-col-droite">
+                <h2 class="rouge-fleurus">Calendrier</h2>
+            </section>
+            <section id="faq" class="section-col-droite">
+                <h2 class="rouge-fleurus">faq</h2>
+            </section>
+            <section id="plan" class="section-col-droite">
+                <h2 class="rouge-fleurus">plan</h2>
+                Implémentation des cités
+            </section>
+        </aside>
         <div class="visualClear"></div>
+    </div>
 
-        <div id="main-content">
-            <div id="left-column"></div>
-            <div id="main-column"></div>
-            <div id="main-column-large"></div>
-        </div>
 
-        <div class="visualClear"></div>
-
-        <div id="colophon">
-        </div>
-
-        <div id="footer">
-        </div>
-
-    </div><!--wrapper-->
-  </body>
+    <footer>
+        <nav id="menu-inferieur">
+            <section id="presentation-inf" class="section-nav-inf">
+                <h2>Présentation</h2>
+                <ul>
+                    <li><a href="#">La société</a></li>
+                    <li><a href="#">Les services</a></li>
+                    <li><a href="#">CCLP</a></li>
+                </ul>
+            </section>
+            <section id="devenir-locataire-inf" class="section-nav-inf">
+                <h2>Devenir locataire</h2>
+                <ul>
+                    <li><a href="#">Conditions à remplir</a></li>
+                    <li><a href="#">Les points de priorité</a></li>
+                    <li><a href="#">Les documents à fournir</a></li>
+                    <li><a href="#">Attribution</a></li>
+                </ul>
+            </section>
+            <section id="etre-locataire-inf" class="section-nav-inf">
+                <h2>Vous êtes locataire</h2>
+                <ul>
+                    <li><a href="#">Administratif</a></li>
+                    <li><a href="#">Technique</a></li>
+                </ul>
+            </section>
+            <div class="stop-float"></div>
+        </nav>
+    </footer>
+    </div>
+</body>
 </html>
