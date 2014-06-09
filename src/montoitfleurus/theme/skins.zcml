@@ -3,5 +3,7 @@
     xmlns:cmf="http://namespaces.zope.org/cmf">
 
    <cmf:registerDirectory name="montoitfleurus_theme_images"/>
+   <cmf:registerDirectory name="montoitfleurus_theme_templates"/>
+   <cmf:registerDirectory name="montoitfleurus_theme_styles"/>
 
 </configure>

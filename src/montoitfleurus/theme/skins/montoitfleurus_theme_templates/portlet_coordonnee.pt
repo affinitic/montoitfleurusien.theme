@@ -1,0 +1,50 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      i18n:domain="plone">
+
+<body>
+
+<!--
+    Portlet domaine du site
+    Portlet avec toutes les picèces de puzzle niveau 1 du site.
+-->
+
+<div metal:define-macro="portlet">
+    <div class="portlet-left-column">
+        <dl id="portlet-coordonnee" class="section-col-droite">
+            <dt class="portletHeaderDB">
+                <span class="portletTopLeft"></span>
+                <span class="portletTopRight"></span>
+                <h2>coordonnées</h2>
+            </dt>
+            <dt class="portletItem">
+                <p id="coord-adresse">
+                    Rue Brennet, 36<br />
+                    6220 Fleurus
+                </p>
+            </dt>
+            <dt class="portletItem">
+                <p id="coord-telephone">
+                    O71 82 71 60
+                </p>
+            </dt>
+            <dt class="portletItem">
+                <p id="coord-fax">
+                    071 80 07 60
+                </p>
+            </dt>
+            <dt class="portletItem">
+                <p id="coord-email">
+                    info@montoit.be
+                </p>
+            </dt>
+            <dt class="portletItem">
+                <p id="coord-heures-ouvertures">
+                    Heures d'ouvertures
+                </p>
+            </dt>
+        </dl>
+    </div>
+</div>
+</body>
+</html>
