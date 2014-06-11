@@ -100,22 +100,23 @@ display:none;
 position:relative;
 top:55px;
 left:5px;
+width:335px;
 }
 
-#portal-siteactions{
+#portal-siteactions-theme{
 position:relative;
-top:-115px;
+top:-140px;
 width:500px;
 height:0px;
 margin:auto;
 }
 
-#portal-siteactions li{
+#portal-siteactions-theme li{
 display:inline;
 margin:0px 6px;
 }
 
-#portal-siteactions a{
+#portal-siteactions-theme a{
 display:inline-block;
 width:130px;
 height:20px;
@@ -128,15 +129,15 @@ text-align:center;
 color:#888;
 }
 
-#portal-siteactions a:hover{
+#portal-siteactions-theme a:hover{
 color:#9d0003;
 background-color:#eee;
 }
 
-#personal-tools{
+#personal-tools-theme{
 position:relative;
-top:-143px;
-left:975px;
+top:-115px;
+left:993px;
 width:150px;
 }
 
@@ -147,8 +148,8 @@ text-align:center;
 
 hr#border-personal-tools{
 position:relative;
-top:-135px;
-left:980px;
+top:-14px;
+left:900px;
 width:180px;
 margin:8px 0px 9px 0px;
 border: 0;
@@ -162,18 +163,20 @@ background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 50%,rgb
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
 }
 
-
-#search-engine{
+#search-engine-theme{
 position:relative;
 left:670px;
-top:-110px;
+top:-85px;
 width:300px;
-height:50px;
+height:28px;
+padding-top:8px;
 text-align:center;
 border:1px solid #999;
 border-radius:18px;
 }
 
+
+/*** MAIN CONTENT ***/
 #main-content{
 background: rgb(255,255,255); /* Old browsers */
 background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6+ */
@@ -185,25 +188,24 @@ background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
 }
 
-#content-text{
-float:left;
-width:917px;
-min-height:300px;
-border-right:1px solid #ddd;
-
-}
-
-#content-text h1{
-font-size:1.8em;
-padding-bottom:5px;
-border-bottom:1px dotted rgba(50,50,50,0.3);
-}
-
 #deco-sup{
 width:914px;
 height:215px;
 background-image:url(../images/banner.jpg);
 background-repeat:no-repeat;
+}
+
+#bloc-central{
+float:left;
+width:917px;
+min-height:300px;
+border-right:1px solid #ddd;
+}
+
+#bloc-central h1{
+font-size:1.8em;
+padding-bottom:5px;
+border-bottom:1px dotted rgba(50,50,50,0.3);
 }
 
 #menu-sup{
@@ -292,8 +294,9 @@ text-transform:uppercase;
 /*** COLONNE DROITE ***/
 aside#right-column{
 float:right;
-width:280px;
+width:270px;
 min-height:600px;
+padding-top:5px;
 }
 
 .portlet-colonne-droite,

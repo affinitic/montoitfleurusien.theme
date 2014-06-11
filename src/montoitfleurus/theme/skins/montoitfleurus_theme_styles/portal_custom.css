@@ -6,3 +6,19 @@
 .searchSection{
 display:none;
 }
+
+#portal-personaltools {
+display:inline-block;
+position: relative;
+left:40px;
+top: 0;
+z-index: 3;
+width:150px;
+height:20px;
+background: none repeat scroll 0 0 #E3E3E3;
+border-bottom-left-radius: 0.5em;
+border-bottom-right-radius: 0.5em;
+font-size: 80%;
+padding: 0.25em 0.5em;
+float:none;
+}

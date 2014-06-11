@@ -40,17 +40,17 @@
           css:content="#portal-logo"
           css:theme="#portal-logo .logo-link" />
 
-    <replace css:content-children="#portal-siteactions"
-             css:theme-children="#portal-siteactions" />
-
-    <replace css:content-children="#portal-personaltools-wrapper"
-             css:theme-children="#personal-tools" />
-
     <replace css:content-children="#portal-logo"
              css:theme-children="#portal-logo" />
 
+    <replace css:content-children="#portal-siteactions"
+             css:theme-children="#portal-siteactions-theme" />
+
+    <replace css:content-children="#portal-personaltools-wrapper"
+             css:theme-children="#personal-tools-theme" />
+
     <replace css:content-children="#portal-searchbox"
-             css:theme-children="#search-engine" />
+             css:theme-children="#search-engine-theme" />
 
     <replace css:content-children="#portal-column-one"
              css:theme-children="#left-column" />
