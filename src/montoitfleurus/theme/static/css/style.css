@@ -208,22 +208,10 @@ padding-bottom:5px;
 border-bottom:1px dotted rgba(50,50,50,0.3);
 }
 
-#menu-sup{
-}
 
-.section-nav-sup{
-float:left;
-margin:1px 1px 0px 1px;
-width:303px;
-min-height:200px;
-}
-
-.section-nav-sup h2{
+#navigation-tab{
+width:894px;
 height:40px;
-line-height:35px;
-color:#fff;
-font-style:uppercase;
-font-size:1.1em;
 border-bottom:2px solid #fcbf4a;
 margin:0px;
 padding-left:20px;
@@ -235,6 +223,19 @@ background: -o-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100
 background: -ms-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* IE10+ */
 background: linear-gradient(to bottom,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+}
+
+nav#navigation-tab li{
+margin:0px 30px;
+width:503px;
+height:40px;
+border:1px solid #fff;
+}
+
+#navigation-tab li a{
+color:#fff;
+font-style:uppercase;
+font-size:1.1em;
 }
 
 .section-nav-sup p{

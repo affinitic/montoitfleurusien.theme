@@ -1,0 +1,20 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="montoitfleurus.theme">
+
+    <!-- 'Mon Toit Fleurisien skin' Zope 3 browser layer -->
+    <interface
+        interface=".interfaces.IMonToitFleurusTheme"
+        type="zope.publisher.interfaces.browser.IBrowserSkinType"
+        name="montoitfleurus theme"
+        />
+    <browser:page
+        name="mon-toit-fleurus"
+        for="*"
+        template="templates/home_page_view.pt"
+        allowed_interface=".interfaces.IMonToitFleurusTheme"
+        permission="zope.Public" />
+
+</configure>
