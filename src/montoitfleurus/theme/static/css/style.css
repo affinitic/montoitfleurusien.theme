@@ -210,11 +210,11 @@ border-bottom:1px dotted rgba(50,50,50,0.3);
 
 
 #navigation-sup{
-width:894px;
+width:914px;
 height:40px;
 border-bottom:2px solid #fcbf4a;
-margin:0px;
-padding-left:20px;
+margin-top:1px;
+padding-left:0px;
 background: rgb(125,126,125); /* Old browsers */
 background: -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(14,14,14,1))); /* Chrome,Safari4+ */
@@ -228,7 +228,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', end
 #navigation-tab li{
 width:503px;
 height:40px;
-margin:0px 30px;
+margin:0px;
 line-height:38px;
 }
 
@@ -238,7 +238,48 @@ font-style:uppercase;
 font-size:1.1em;
 }
 
-.section-nav-sup p{
+
+#navigation-tab li a:hover{
+color:#fcbf4a;
+}
+
+
+#portaltab-presentation,
+#portaltab-devenir-locataire,
+#portaltab-vous-etes-locataire{
+position:relative;
+}
+
+#portaltab-presentation{
+left:98px;
+}
+
+#portaltab-devenir-locataire{
+left:286px;
+}
+
+#portaltab-vous-etes-locataire{
+left:445px;
+}
+
+
+
+
+
+
+#bloc-info-sup{
+position:relative;
+top:-13px;
+
+}
+.article-nav-sup{
+display: inline-block;
+margin:1px 1px 0px 1px;
+width:301px;
+min-height:200px;
+}
+
+.article-nav-sup p{
 color:#fff;
 font-size:0.8em;
 padding:1em;
@@ -255,6 +296,7 @@ background-color:#7fa0c3;
 #etre-locataire-sup{
 background-color:#93bae3;
 }
+
 
 #news-event{
 margin:15px 4px 15px 4px;

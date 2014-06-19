@@ -75,6 +75,8 @@
     <replace css:content-children="#portal-footer"
              css:theme-children="#footer" />
 
+    <drop css:content-children="#portal-breadcrumbs" if-path="/ plone" />
+    <drop css:content-children="#portaltab-index_html" if-path="/ plone" />
     <drop css:theme="#left-column" if="$have_no_portlet" />
     <drop css:theme="#main-column" if="$have_no_portlet" />
     <drop css:theme="#main-column-large" if="$have_portlets" />

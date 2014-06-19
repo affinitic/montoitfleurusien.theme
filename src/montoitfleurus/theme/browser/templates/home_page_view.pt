@@ -10,7 +10,33 @@
 
 <body>
 <div metal:fill-slot="main">
+    <section id="bloc-info-sup">
+        <article id="presentation-sup" class="article-nav-sup">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit.
+            </p>
+        </article>
+        <article id="devenir-locataire-sup" class="article-nav-sup">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit.
+            </p>
+        </article>
+        <article id="etre-locataire-sup" class="article-nav-sup">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit.
+            </p>
+        </article>
+        <div class="stop-float"></div>
+    </section>
 </div><!-- div metal-->
 </body>
 </html>
 
+Université du Travail
+Boulevard Roullier, 1
+6000 Charleroi
+
+  071/53.15.56 | 071/53.15.57
+  yves.lardinois@hainaut.be
+
+www.yveslardinois.be
