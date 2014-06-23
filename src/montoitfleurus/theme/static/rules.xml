@@ -38,10 +38,10 @@
     <!-- Logo link -->
     <copy attributes="href"
           css:content="#portal-logo"
-          css:theme="#portal-logo .logo-link" />
+          css:theme="#portal-logo-theme" />
 
     <replace css:content-children="#portal-logo"
-             css:theme-children="#portal-logo" />
+             css:theme-children="#portal-logo-theme" />
 
     <replace css:content-children="#portal-siteactions"
              css:theme-children="#portal-siteactions-theme" />
@@ -75,8 +75,8 @@
     <replace css:content-children="#portal-footer"
              css:theme-children="#footer" />
 
-    <drop css:content-children="#portal-breadcrumbs" if-path="/ plone" />
-    <drop css:content-children="#portaltab-index_html" if-path="/ plone" />
+    <drop css:content-children="#portal-breadcrumbs" if-path="/ /plone" />
+    <drop css:content-children="#portaltab-index_html" if-path="/ /plone" />
     <drop css:theme="#left-column" if="$have_no_portlet" />
     <drop css:theme="#main-column" if="$have_no_portlet" />
     <drop css:theme="#main-column-large" if="$have_portlets" />

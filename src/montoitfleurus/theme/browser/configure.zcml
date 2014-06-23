@@ -10,11 +10,28 @@
         type="zope.publisher.interfaces.browser.IBrowserSkinType"
         name="montoitfleurus theme"
         />
+
+    <browser:view
+        name="monToitNewsView"
+        class=".montoit_get_events_news.MonToitNews"
+        allowed_interface=".interfaces.IMonToitNews"
+        for="*"
+        permission="zope.Public"
+        />
+        <browser:view
+        name="monToitEventsView"
+        class=".montoit_get_events_news.MonToitEvents"
+        allowed_interface=".interfaces.IMonToitEvents"
+        for="*"
+        permission="zope.Public"
+        />
+
     <browser:page
         name="mon-toit-fleurus"
         for="*"
         template="templates/home_page_view.pt"
         allowed_interface=".interfaces.IMonToitFleurusTheme"
-        permission="zope.Public" />
+        permission="zope.Public"
+    />
 
 </configure>
