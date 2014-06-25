@@ -4,7 +4,9 @@
 
    <include file="profiles.zcml" />
    <include file="skins.zcml" />
+
    <include package=".browser" />
+   <include package=".viewlets" />
 
    <plone:static type="theme"
                  directory="static"

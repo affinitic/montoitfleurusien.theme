@@ -74,8 +74,8 @@
     <replace css:content-children="#portal-colophon"
              css:theme-children="#colophon" />
 
-    <replace css:content-children="#portal-footer"
-             css:theme-children="#footer" />
+    <replace css:content-children="#footer-sitemap"
+             css:theme-children="#menu-inferieur" />
 
     <drop css:content-children="#portal-breadcrumbs" if-path="/ /plone" />
     <drop css:content-children="#portaltab-index_html" if-path="/ /plone" />
