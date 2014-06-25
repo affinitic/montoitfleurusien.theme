@@ -56,14 +56,16 @@
              css:theme-children="#navigation-tab" />
 
     <replace css:content-children="#portal-column-one"
-             css:theme-children="#left-column" />
+             css:theme-children="#left-column"
+             if="$have_left_portlets" />
 
     <replace css:content-children="#portal-column-content"
              css:theme-children="#content-text"
              if="$have_portlets" />
 
     <replace css:content-children="#portal-column-two"
-             css:theme-children="#right-column" />
+             css:theme-children="#right-column"
+             if="$have_right_portlets" />
 
     <replace css:content-children="#portal-column-content"
              css:theme-children="#content-text"
@@ -77,7 +79,7 @@
 
     <drop css:content-children="#portal-breadcrumbs" if-path="/ /plone" />
     <drop css:content-children="#portaltab-index_html" if-path="/ /plone" />
-    <drop css:theme="#left-column" if="$have_no_portlet" />
+    <drop css:theme="#left-column" if-not="$have_left_portlets" />
     <drop css:theme="#main-column" if="$have_no_portlet" />
     <drop css:theme="#main-column-large" if="$have_portlets" />
 

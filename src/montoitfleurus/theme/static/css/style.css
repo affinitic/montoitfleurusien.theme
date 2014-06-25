@@ -333,6 +333,15 @@ text-transform:uppercase;
 }
 
 
+/*** COLONNE GAUCHE ***/
+aside#left-column{
+float:left;
+width:270px;
+min-height:600px;
+padding-top:5px;
+}
+
+
 /*** COLONNE DROITE ***/
 aside#right-column{
 float:right;
