@@ -2,5 +2,5 @@
 
 <layers>
     <layer name="montoitfleurus.theme"
-           interface="montoitfleurus.theme.interfaces.ICustomTheme" />
+           interface="montoitfleurus.theme.interfaces.IMonToitFleurusTheme" />
 </layers>

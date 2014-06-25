@@ -1,7 +1,14 @@
 from zope.interface import Interface
+from plone.theme.interfaces import IDefaultPloneLayer
+
+
+class IMonToitFleurusTheme(IDefaultPloneLayer):
+    """
+    Theme for Mon Toit Fleurusien
+    """
 
 
 class ICustomTheme(Interface):
     """
-    Marker interface that defines a Zope 3 browser layer.
+    XXX: To be removed, but for now breaks if removed
     """

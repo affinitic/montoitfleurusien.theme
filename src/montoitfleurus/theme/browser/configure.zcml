@@ -4,34 +4,13 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="montoitfleurus.theme">
 
-    <!-- 'Mon Toit Fleurisien skin' Zope 3 browser layer -->
-    <interface
-        interface=".interfaces.IMonToitFleurusTheme"
-        type="zope.publisher.interfaces.browser.IBrowserSkinType"
-        name="montoitfleurus theme"
-        />
-
-    <browser:view
-        name="monToitNewsView"
-        class=".montoit_get_events_news.MonToitNews"
-        allowed_interface=".interfaces.IMonToitNews"
-        for="*"
-        permission="zope.Public"
-        />
-        <browser:view
-        name="monToitEventsView"
-        class=".montoit_get_events_news.MonToitEvents"
-        allowed_interface=".interfaces.IMonToitEvents"
-        for="*"
-        permission="zope.Public"
-        />
-
     <browser:page
-        name="mon-toit-fleurus"
+        name="homepage"
         for="*"
+        class=".homepage.HomePageView"
         template="templates/home_page_view.pt"
-        allowed_interface=".interfaces.IMonToitFleurusTheme"
         permission="zope.Public"
-    />
+        layer="montoitfleurus.theme.interfaces.IMonToitFleurusTheme"
+        />
 
 </configure>

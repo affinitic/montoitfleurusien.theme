@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step id="montoitfleurus.theme.default"
+               handler="montoitfleurus.theme.setuphandlers.install"
+               title="montoitfleurus.theme: install import step">
+  </import-step>
+</import-steps>

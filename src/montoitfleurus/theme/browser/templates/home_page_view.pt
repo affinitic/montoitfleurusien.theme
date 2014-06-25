@@ -10,20 +10,28 @@
 
 <body>
 <div metal:fill-slot="main">
-    <section id="bloc-info-sup">
+    <section id="bloc-info-sup"
+             tal:define="member context/@@plone_portal_state/member;
+                         manager python: member.has_role('Manager')">
         <article id="presentation-sup" class="article-nav-sup">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit.
+            <p tal:replace="structure view/getPresentationText" />
+            <p tal:condition="manager">
+                <a href=""
+                   tal:attributes="href string:${context/portal_url}/boite-presentation/edit">[modifier ce texte]</a>
             </p>
         </article>
         <article id="devenir-locataire-sup" class="article-nav-sup">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit.
+            <p tal:replace="structure view/getDevenirLocataireText" />
+            <p tal:condition="manager">
+                <a href=""
+                   tal:attributes="href string:${context/portal_url}/boite-devenir-locataire/edit">[modifier ce texte]</a>
             </p>
         </article>
         <article id="etre-locataire-sup" class="article-nav-sup">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit.
+            <p tal:replace="structure view/getEtesLocataireText" />
+            <p tal:condition="manager">
+                <a href=""
+                   tal:attributes="href string:${context/portal_url}/boite-vous-etes-locataire/edit">[modifier ce texte]</a>
             </p>
         </article>
         <div class="stop-float"></div>
@@ -32,8 +40,7 @@
     <section id="bloc-info-inf">
         <div id="actualite">
             <h2>Actuialité</h2>
-            <div tal:define="view nocall:context/@@monToitNewsView;
-                             news python:view.getNews(5);
+            <div tal:define="news python:view.getNews(5);
                              convert nocall:context/@@plone/toLocalizedTime;
                              getNewsIconURL nocall:view/getNewsIconURL;"
                 tal:condition="news"
@@ -65,8 +72,7 @@
 
         <div id="agenda">
             <h2>Agenda</h2>
-            <div tal:define="view nocall:context/@@monToitEventsView;
-                             events python:view.getEvents(5);
+            <div tal:define="events python:view.getEvents(5);
                              toLocalizedTime nocall:context/@@plone/toLocalizedTime"
                  tal:condition="events"
                  class="info-generale-content">
