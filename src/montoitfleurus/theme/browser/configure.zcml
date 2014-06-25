@@ -5,12 +5,20 @@
     i18n_domain="montoitfleurus.theme">
 
     <browser:page
+        name="diazo-parameters"
+        for="*"
+        class=".diazo.DiazoParametersView"
+        permission="zope.Public"
+        layer="..interfaces.IMonToitFleurusTheme"
+        />
+
+    <browser:page
         name="homepage"
         for="*"
         class=".homepage.HomePageView"
         template="templates/home_page_view.pt"
         permission="zope.Public"
-        layer="montoitfleurus.theme.interfaces.IMonToitFleurusTheme"
+        layer="..interfaces.IMonToitFleurusTheme"
         />
 
 </configure>
