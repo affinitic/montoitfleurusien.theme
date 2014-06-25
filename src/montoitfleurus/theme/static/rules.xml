@@ -32,16 +32,15 @@
     <copy attributes="xmlns lang xml:lang"
           content="/html"
           theme="/html" />
+
     <copy attributes="class id dir"
           content="/html/body"
           theme="/html/body" />
-    <!-- Logo link -->
-    <copy attributes="href"
-          css:content="#portal-logo"
-          css:theme="#portal-logo-theme" />
 
-    <replace css:content-children="#portal-logo"
-             css:theme-children="#portal-logo-theme" />
+    <!-- Logo link -->
+    <copy attributes="href accesskey title"
+          css:content="#portal-logo"
+          css:theme=".logo-link" />
 
     <replace css:content-children="#portal-siteactions"
              css:theme-children="#portal-siteactions-theme" />
