@@ -273,6 +273,7 @@ top:-13px;
 left:-4px;
 display:table;
 width:919px;
+min-height:250px;
 border-collapse:separate;
 border-spacing:1px 0px;
 }
