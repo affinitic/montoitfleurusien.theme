@@ -15,24 +15,24 @@
                          manager python: member.has_role('Manager')">
         <article id="presentation-sup" class="article-nav-sup">
             <p tal:replace="structure view/getPresentationText" />
-            <p tal:condition="manager">
+            <footer tal:condition="manager">
                 <a href=""
                    tal:attributes="href string:${context/portal_url}/boite-presentation/edit">[modifier ce texte]</a>
-            </p>
+            </footer>
         </article>
         <article id="devenir-locataire-sup" class="article-nav-sup">
             <p tal:replace="structure view/getDevenirLocataireText" />
-            <p tal:condition="manager">
+            <footer tal:condition="manager">
                 <a href=""
                    tal:attributes="href string:${context/portal_url}/boite-devenir-locataire/edit">[modifier ce texte]</a>
-            </p>
+            </footer>
         </article>
         <article id="etre-locataire-sup" class="article-nav-sup">
             <p tal:replace="structure view/getEtesLocataireText" />
-            <p tal:condition="manager">
+            <footer tal:condition="manager">
                 <a href=""
                    tal:attributes="href string:${context/portal_url}/boite-vous-etes-locataire/edit">[modifier ce texte]</a>
-            </p>
+            </footer>
         </article>
         <div class="stop-float"></div>
     </section>
