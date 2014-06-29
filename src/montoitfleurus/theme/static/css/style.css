@@ -80,7 +80,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcdcdc', end
 
 #portal-logo-theme{
 float:left;
-width:86px;
+width:270px;
 height:87px;
 margin-left:15px;
 margin-top:15px;
@@ -90,17 +90,11 @@ background-position:left center;
 line-height:87px;
 padding-left:0px;
 font-size:1.2em;
+text-align:right;
 }
 
 #portal-logo-theme img{
 display:none;
-}
-
-#portal-titre{
-position:relative;
-top:55px;
-left:5px;
-width:335px;
 }
 
 #portal-siteactions-theme{
