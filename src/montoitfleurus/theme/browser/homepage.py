@@ -15,7 +15,7 @@ class HomePageView(BrowserView):
         """
         catalog = getToolByName(aq_inner(self.context), 'portal_catalog')
         listMonToitNews = catalog(portal_type='News Item',
-                                  review_state=('external', 'internal'),
+                                  review_state=('published',),
                                   sort_on='Date',
                                   sort_order='reverse',
                                   sort_limit=nombre)
@@ -39,12 +39,11 @@ class HomePageView(BrowserView):
         """
         catalog = getToolByName(aq_inner(self.context), 'portal_catalog')
         listMonToitevents = catalog(portal_type='Event',
-                                    review_state=('external', 'internal'),
+                                    review_state=('published',),
                                     sort_on='Date',
                                     sort_order='reverse',
                                     sort_limit=nombre)
-
-        return [listMonToitevents.getObject() for event in listMonToitevents]
+        return [event.getObject() for event in listMonToitevents]
 
     @memoize
     def getPageText(self, pageId):

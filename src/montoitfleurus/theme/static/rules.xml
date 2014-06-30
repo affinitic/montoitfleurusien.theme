@@ -52,7 +52,7 @@
              css:theme-children="#search-engine-theme" />
 
     <replace css:content-children="#portal-globalnav"
-             css:theme-children="#navigation-tab" />
+             css:theme-children="#navigation-tab-theme" />
 
     <replace css:content-children="#portal-column-one"
              css:theme-children="#left-column"
@@ -67,7 +67,7 @@
              if="$have_right_portlets" />
 
     <replace css:content-children="#portal-column-content"
-             css:theme-children="#content-text"
+             css:theme-children="#central-bloc"
              if="$have_no_portlet" />
 
     <replace css:content-children="#portal-colophon"

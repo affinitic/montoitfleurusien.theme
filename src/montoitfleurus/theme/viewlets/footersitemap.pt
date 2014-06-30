@@ -2,16 +2,25 @@
      tal:define="sitemap view/createSiteMap;
                  context_absolute_url python:context.absolute_url()+'/'">
 
-  <section class="section-nav-inf" tal:repeat="elt sitemap">
+  <section class="section-nav-inf"
+           tal:repeat="elt sitemap">
     <h2>
-        <a href="#" tal:define="theme elt/theme" tal:attributes="href theme/getPath; title theme/Description" tal:content="theme/Title" ><tal:comment replace="nothing">First level element</tal:comment></a>
+        <a href="#"
+           tal:define="theme elt/theme"
+           tal:attributes="href theme/getPath; title theme/Description"
+           tal:content="theme/Title" >
+            <tal:comment replace="nothing">First level element</tal:comment></a>
     </h2>
     <ul>
-      <tal:blc tal:repeat="child python:elt['children']">
-        <li tal:define="childURL child/getURL; childURL2 python: childURL+'/';" tal:attributes="class python:context_absolute_url.startswith(childURL2) and 'selected' or ''">
-          <a href="" tal:attributes="href childURL; title child/Description" tal:content="child/Title"><tal:comment replace="nothing">Seconde level element</tal:comment></a>
-        </li>
-      </tal:blc>
+        <tal:blc tal:repeat="child python:elt['children']">
+            <li tal:define="childURL child/getURL; childURL2 python: childURL+'/';"
+                tal:attributes="class python:context_absolute_url.startswith(childURL2) and 'selected' or ''">
+                <a href=""
+                   tal:attributes="href childURL; title child/Description"
+                   tal:content="child/Title">
+                    <tal:comment replace="nothing">Seconde level element</tal:comment></a>
+            </li>
+        </tal:blc>
     </ul>
   </section>
 

@@ -91,8 +91,6 @@
                                     class="ismevents-title" />
                                 <span tal:content="string:${item_startdate} ${item_startdate} ${item_starttime} - ${item_endtime}"
                                       class="ismevents-date" />
-                                <span tal:content="item/profResponsable"
-                                      class="ismevents-date" />
                                 <p tal:content="item/Description"
                                    class="ismevents-description"></p>
                             </a>
@@ -112,12 +110,3 @@
 </div><!-- div metal-->
 </body>
 </html>
-
-Université du Travail
-Boulevard Roullier, 1
-6000 Charleroi
-
-  071/53.15.56 | 071/53.15.57
-  yves.lardinois@hainaut.be
-
-www.yveslardinois.be
