@@ -79,7 +79,5 @@
     <drop css:content-children="#portal-breadcrumbs" if="$is_portal_root" />
     <drop css:content-children="#portaltab-index_html" />
     <drop css:theme="#left-column" if-not="$have_left_portlets" />
-    <drop css:theme="#main-column" if="$have_no_portlet" />
-    <drop css:theme="#main-column-large" if="$have_portlets" />
 
 </rules>
