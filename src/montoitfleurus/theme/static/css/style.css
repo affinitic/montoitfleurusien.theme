@@ -374,10 +374,12 @@ background-color:#819fc1;
 
 
 /*** COLONNE CENTRALE ***/
-#content-text{
+#content-text.small{
 float:right;
 width:660px;
-border:1px solid #00f;
+}
+
+#content-text.large{
 }
 
 

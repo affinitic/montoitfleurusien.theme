@@ -15,6 +15,7 @@
     <notheme if-path="attributes.htm"/>
 
     <!-- Common Plone rules -->
+
     <drop theme="/html/head/meta" />
     <drop theme="/html/head/title" />
     <drop theme="/html/head/base" />
@@ -38,9 +39,13 @@
           theme="/html/body" />
 
     <!-- Logo link -->
+
     <copy attributes="href accesskey title"
           css:content="#portal-logo"
           css:theme=".logo-link" />
+
+
+    <!-- Various parts -->
 
     <replace css:content-children="#portal-siteactions"
              css:theme-children="#portal-siteactions-theme" />
@@ -54,27 +59,39 @@
     <replace css:content-children="#portal-globalnav"
              css:theme-children="#navigation-tab-theme" />
 
-    <replace css:content-children="#portal-column-one"
-             css:theme-children="#left-column"
-             if="$have_left_portlets" />
-
-    <replace css:content-children="#portal-column-content"
-             css:theme-children="#content-text"
-             if="$have_portlets" />
-
-    <replace css:content-children="#portal-column-two"
-             css:theme-children="#right-column"
-             if="$have_right_portlets" />
-
-    <replace css:content-children="#portal-column-content"
-             css:theme-children="#central-bloc"
-             if="$have_no_portlet" />
-
     <replace css:content-children="#portal-colophon"
              css:theme-children="#colophon" />
 
     <replace css:content-children="#footer-sitemap"
              css:theme-children="#menu-inferieur" />
+
+
+    <!-- Content and columns -->
+
+   <replace css:theme="#content-text"
+            if="$have_left_portlets">
+        <section id="content-text" class="small">
+            <xsl:apply-templates select="//*[@id='portal-column-content']/*"/>
+        </section>
+    </replace>
+
+   <replace css:theme="#content-text"
+            if-not="$have_left_portlets">
+        <section id="content-text" class="large">
+            <xsl:apply-templates select="//*[@id='portal-column-content']/*"/>
+        </section>
+    </replace>
+
+    <replace css:content-children="#portal-column-one"
+             css:theme-children="#left-column"
+             if="$have_left_portlets" />
+
+    <replace css:content-children="#portal-column-two"
+             css:theme-children="#right-column"
+             if="$have_right_portlets" />
+
+
+    <!-- Cleanup -->
 
     <drop css:content-children="#portal-breadcrumbs" if="$is_portal_root" />
     <drop css:content-children="#portaltab-index_html" />
