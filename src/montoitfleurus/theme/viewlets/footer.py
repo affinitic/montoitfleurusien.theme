@@ -27,14 +27,14 @@ class FooterSitemapViewlet(ViewletBase):
         metaTypesNotToList = navtreeProps.metaTypesNotToList
         idsNotToList = navtreeProps.idsNotToList
         for theme in themes:
-            if not theme.meta_type in metaTypesNotToList and \
+            if not theme.portal_type in metaTypesNotToList and \
                not theme.id in idsNotToList and not theme.exclude_from_nav:
                 themeRes = {'theme': theme, 'children': []}
                 # do a second catalog_search by theme
                 queryDict['path'] = {'query': theme.getPath(), 'depth': 1}
                 children = portal_catalog(queryDict)
                 for child in children:
-                    if not child.meta_type in metaTypesNotToList and \
+                    if not child.portal_type in metaTypesNotToList and \
                        not child.id in idsNotToList and not child.exclude_from_nav:
                         themeRes['children'].append(child)
                 res.append(themeRes)
