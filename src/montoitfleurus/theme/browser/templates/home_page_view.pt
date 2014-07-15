@@ -39,7 +39,7 @@
 
     <section id="bloc-info-inf">
         <div id="actualite">
-            <h2>Actuialité</h2>
+            <h2>Actualité</h2>
             <div tal:define="news python:view.getNews(5);
                              convert nocall:context/@@plone/toLocalizedTime;
                              getNewsIconURL nocall:view/getNewsIconURL;"
