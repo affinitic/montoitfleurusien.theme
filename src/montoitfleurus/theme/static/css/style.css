@@ -265,7 +265,6 @@ left:286px;
 left:445px;
 }
 
-
 #bloc-info-sup{
 position:relative;
 top:-13px;
@@ -349,6 +348,7 @@ float:left;
 
 #agenda{
 float:right;
+margin-right:8px;
 }
 
 #actualite h2,
@@ -361,11 +361,13 @@ text-transform:uppercase;
 }
 
 #central-bloc{
+display:table;
 }
 
 /*** COLONNE GAUCHE ***/
 aside#left-column{
 float:left;
+display:table-cell;
 width:250px;
 min-height:600px;
 padding-top:5px;
@@ -392,7 +394,8 @@ padding-top:5px;
 }
 
 .portlet-colonne-droite,
-aside#right-column dl.portletCalendar{
+aside#right-column dl.portletCalendar,
+aside#right-column dl.portletNews{
 width:95%;
 font-size:0.8em;
 border:1px solid #ddd;
@@ -483,10 +486,11 @@ line-height:30px;
 
 
 /*** FOOTER ***/
-footer{
+footer#main-footer{
 margin-top:3px;
 background-color:#c3c3c3;
 border-radius:0px 0px 18px 18px;
+padding-bottom:15px;
 }
 
 

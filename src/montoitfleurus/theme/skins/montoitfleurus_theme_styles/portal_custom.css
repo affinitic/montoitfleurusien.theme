@@ -23,3 +23,68 @@ padding: 0.25em 0.5em;
 float:none;
 }
 
+
+/*** PORTLET NAVIGATION ***/
+/* icone dossier jaune devant item*/
+aside#left-column dl.portlet.portletNavigationTree dd.portletItem.lastItem ul.navTree.navTreeLevel0 li.navTreeItem.visualNoMarker.navTreeFolderish a.contenttype-folder{
+background-image:url(../images/icone_fleche.png);
+background-repeat:no-repeat;
+background-position:left center;
+}
+
+dl.portlet ul.navTree .navTreeCurrentItem {
+color:#666 !important;
+background-color: #ddd;
+border-left: 1em solid transparent;
+margin-left: -1em;
+margin-right: -1em;
+}
+
+aside#left-column dl.portlet.portletNavigationTree a{
+color: #666 !important;
+}
+
+aside#left-column dl.portlet.portletNavigationTree a:hover{
+color:#fff !important;
+}
+
+aside#left-column dl.portlet.portletNavigationTree a.navTreeCurrentItem{
+color:#666 !important;
+}
+
+
+/*** BREADCRUMBS ***/
+#portal-breadcrumbs {
+font-size: 80%;
+margin-bottom: 1em;
+margin-left: 0.25em;
+margin-top: 0.45em;
+}
+
+
+/*** SERACH ENGINE ***/
+#LSResult {
+position: absolute;
+right: 0;
+z-index:10;
+background: none repeat scroll 0 0 rgba(255,255,255,0.8);
+margin: 2px 0 0 -7em;
+border-radius:5px 5px 18px 18px;
+border: 0.1em solid #ccc;
+}
+
+#LSResult fieldset {
+border:none;
+padding: 1em 0 0;
+}
+
+
+
+/*** CONTENT PLONE ***/
+#content{
+}
+
+#content h1.documentFirstHeading {
+color:#9e060c;
+margin-bottom:8px;
+}
