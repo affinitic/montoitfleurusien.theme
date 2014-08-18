@@ -143,12 +143,12 @@ background-color:#eee;
 #personal-tools-theme{
 position:relative;
 top:-115px;
-left:993px;
+left:978px;
 width:150px;
 }
 
 #portal-personaltools.actionMenu{
-width:100px;
+width:120px;
 text-align:center;
 }
 
@@ -171,9 +171,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 #search-engine-theme{
 position:relative;
-left:670px;
+left:910px;
 top:-55px;
-width:300px;
+width:260px;
 height:28px;
 padding-top:8px;
 text-align:center;
