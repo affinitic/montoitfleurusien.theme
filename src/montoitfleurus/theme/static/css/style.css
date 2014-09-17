@@ -395,7 +395,9 @@ padding-top:5px;
 
 .portlet-colonne-droite,
 aside#right-column dl.portletCalendar,
-aside#right-column dl.portletNews{
+aside#right-column dl.portletNews,
+aside#right-column dl.portlet-static-faq,
+aside#right-column dl.portlet-static-coordonnees{
 width:95%;
 font-size:0.8em;
 border:1px solid #ddd;
@@ -411,37 +413,37 @@ background: linear-gradient(135deg,  rgba(198,196,197,0.5) 0%,rgba(127,125,126,0
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80c6c4c5', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-#portlet-coordonnee,
-#portlet-faq,
+.portlet-static-coordonnees,
+.portlet-static-faq,
 #portlet-plan{
 padding-left:8px;
 min-height:150px;
 }
 
 aside#right-column dt.portletHeader,
-aside#right-column #portlet-coordonnee.portletHeaderDB,
-aside#right-column #portlet-faq.portletHeaderDB,
+aside#right-column .portlet-static-coordonnees.portletHeaderDB,
+aside#right-column .portlet-static-faq.portletHeaderDB,
 aside#right-column #portlet-plan.portletHeaderDB{
 border-radius:12px 0px 0px 12px;
 background-color:transparent;
 color:#9d0003;
 }
 
-#portlet-coordonnee h2,
-#portlet-faq h2,
+.portlet-static-coordonnees h2,
+.portlet-static-faq h2,
 #portlet-plan h2{
 height:28px;
 color:#9d0003;
 line-height:26px;
-border-bottom:1px dotted #555;
+/*border-bottom:1px dotted #555;*/
 font-size:1em;
 margin:5px 0px 5px 0px;
-text-transform:uppercase;
 padding-left:6px;
 }
 
-#portlet-coordonnee p,
-#portlet-faq p,
+
+.portlet-static-coordonnees p,
+.portlet-static-faq p,
 #portlet-plan p{
 margin:5px 0px;
 }
