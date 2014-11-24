@@ -1,10 +1,10 @@
 @font-face {
 font-family: 'mondaregular';
-src: url('font/monda-regular-webfont.eot');
-src: url('font/monda-regular-webfont.eot?#iefix') format('embedded-opentype'),
-     url('font/monda-regular-webfont.woff') format('woff'),
-     url('font/monda-regular-webfont.ttf') format('truetype'),
-     url('font/monda-regular-webfont.svg#mondaregular') format('svg');
+src: url('../font/monda-regular-webfont.eot');
+src: url('../font/monda-regular-webfont.eot?#iefix') format('embedded-opentype'),
+     url('../font/monda-regular-webfont.woff') format('woff'),
+     url('../font/monda-regular-webfont.ttf') format('truetype'),
+     url('../font/monda-regular-webfont.svg#mondaregular') format('svg');
 font-weight: normal;
 font-style: normal;
 }
