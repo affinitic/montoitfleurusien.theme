@@ -397,7 +397,8 @@ padding-top:5px;
 aside#right-column dl.portletCalendar,
 aside#right-column dl.portletNews,
 aside#right-column dl.portlet-static-faq,
-aside#right-column dl.portlet-static-coordonnees{
+aside#right-column dl.portlet-static-coordonnees,
+aside#right-column dl.portlet-static-plan{
 width:95%;
 font-size:0.8em;
 border:1px solid #ddd;
