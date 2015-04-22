@@ -1,7 +1,7 @@
 <tal:favicon define="portal_url view/site_url">
     <link rel="shortcut icon"
           type="image/png"
-          href="++theme++montoitfleurus.skin/images/favicon.png" />
+          href="favicon.png" />
     <link rel="apple-touch-icon"
           href="++theme++montoitfleurus.skin/images/touch_icon.png" />
 </tal:favicon>
