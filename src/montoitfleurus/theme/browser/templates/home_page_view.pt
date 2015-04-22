@@ -37,7 +37,9 @@
         <div class="stop-float"></div>
     </section>
 
-    <section id="bloc-info-inf">
+    <section id="bloc-info-inf"
+             tal:define="member context/@@plone_portal_state/member;
+                         manager python: member.has_role('Manager')">
         <div id="actualite">
             <h2>Actualité</h2>
             <div tal:define="news python:view.getNews(5);
@@ -62,11 +64,19 @@
                     </tal:boucle>
                 </tal:if>
             </div>
-            <footer class="footer-info-generale">
+
+            <footer >
+                <div tal:condition="manager"
+                    class="bouton-ajouter">
+                    <a href=""
+                       tal:attributes="href string:${context/portal_url}/createObject?type_name=News+Item">
+                       [ajouter]</a>
+                </div>
                 <div class="bouton-suite">
                     <a href=""
-                       tal:attributes="href string:${context/portal_url}/"></a>
+                       tal:attributes="href string:${context/portal_url}/">Plus...</a>
                 </div>
+                <div class="stop-float"></div>
             </footer>
         </div>
 
@@ -98,11 +108,18 @@
                     </tal:boucle>
                 </tal:if>
             </div>
-            <footer class="footer-info-generale">
-                    <div class="bouton-suite">
-                        <a href=""
-                           tal:attributes="href string:${context/portal_url}/"></a>
-                    </div>
+
+            <footer>
+                <div tal:condition="manager"
+                    class="bouton-ajouter">
+                    <a href=""
+                       tal:attributes="href string:${context/portal_url}/createObject?type_name=Event">
+                       [ajouter]</a>
+                </div>
+                <div class="bouton-suite">
+                    <a href=""
+                       tal:attributes="href string:${context/portal_url}/">Plus...</a>
+                </div>
             </footer>
         </div>
         <div class="visualClear"></div>

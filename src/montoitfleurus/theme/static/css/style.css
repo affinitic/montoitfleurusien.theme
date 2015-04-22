@@ -26,6 +26,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', end
 }
 
 
+
+.i4ewOd-pzNkMb-haAclf {
+    background-color: rgba(45, 45, 45, 0);
+    color: #fff;
+    display: none;
+    left: 0 !important;
+    overflow: hidden;
+    right: 0 !important;
+    transition: background-color 0.25s ease 0s;
+    z-index: 9 !important;
+    display:none;
+}
+
+
 .stop-float{
 clear:both;
 }
@@ -363,6 +377,29 @@ text-transform:uppercase;
 #central-bloc{
 display:table;
 }
+
+
+#actualite footer,
+#agenda footer{
+border-top:1px dotted #ccc;
+position:absolute;
+bottom:32px;
+width:430px;
+font-size:0.8em;
+}
+
+.bouton-ajouter{
+float:left;
+width:100px;
+text-align:left;
+}
+
+.bouton-suite{
+float:right;
+width:100px;
+text-align:right;
+}
+
 
 /*** COLONNE GAUCHE ***/
 aside#left-column{
