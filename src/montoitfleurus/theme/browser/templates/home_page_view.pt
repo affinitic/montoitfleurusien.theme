@@ -74,7 +74,7 @@
                 </div>
                 <div class="bouton-suite">
                     <a href=""
-                       tal:attributes="href string:${context/portal_url}/">Plus...</a>
+                       tal:attributes="href string:${context/portal_url}/actualite">Plus...</a>
                 </div>
                 <div class="stop-float"></div>
             </footer>
@@ -118,7 +118,7 @@
                 </div>
                 <div class="bouton-suite">
                     <a href=""
-                       tal:attributes="href string:${context/portal_url}/">Plus...</a>
+                       tal:attributes="href string:${context/portal_url}/agenda">Plus...</a>
                 </div>
             </footer>
         </div>
