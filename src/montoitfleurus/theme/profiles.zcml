@@ -5,9 +5,9 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="Site pour Mon Toit Fleurusien"
+      title="Skin Mon Toit Fleurusien"
       directory="profiles/default"
-      description="Installs profile for Site pour Mon Toit Fleurusien"
+      description="Installs profile for Skin Mon Toit Fleurusien"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 

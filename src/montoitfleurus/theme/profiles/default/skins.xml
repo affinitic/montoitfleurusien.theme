@@ -2,7 +2,7 @@
 <object name="portal_skins"
         allow_any="False"
         cookie_persistence="False"
-        default_skin="Site pour Mon Toit Fleurusien">
+        default_skin="Skin Mon Toit Fleurusien">
 
     <object name="montoitfleurus_theme_images"
             meta_type="Filesystem Directory View"
@@ -14,7 +14,7 @@
             meta_type="Filesystem Directory View"
             directory="montoitfleurus.theme:skins/montoitfleurus_theme_styles"/>
 
-    <skin-path name="Site pour Mon Toit Fleurusien"
+    <skin-path name="Skin Mon Toit Fleurusien"
                based-on="Sunburst Theme">
         <layer name="montoitfleurus_theme_images"
                insert-after="custom"/>

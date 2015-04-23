@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <object name="portal_css">
 
-    <stylesheet title="Site pour Mon Toit Fleurusien Styles"
+    <stylesheet title="Skin Mon Toit Fleurusien Styles"
                 id="++theme++montoitfleurus.theme/css/style.css"
                 media="screen"
                 rel="stylesheet"
@@ -15,6 +15,18 @@
 
     <stylesheet title="Customisation du Plone"
                 id="portal_custom.css"
+                media="screen"
+                rel="stylesheet"
+                rendering="import"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                applyPrefix="True"
+                expression=""/>
+
+    <stylesheet title="Porlet du theme"
+                id="portlet.css"
                 media="screen"
                 rel="stylesheet"
                 rendering="import"
