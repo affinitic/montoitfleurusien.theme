@@ -1,3 +1,9 @@
+/*
+Style theme Mon Toit Fleurusien
+By Affinitic
+2014
+*/
+
 @font-face {
 font-family: 'mondaregular';
 src: url('../font/monda-regular-webfont.eot');
@@ -428,100 +434,6 @@ float:right;
 width:270px;
 min-height:600px;
 padding-top:5px;
-}
-
-.portlet-colonne-droite,
-aside#right-column dl.portletCalendar,
-aside#right-column dl.portletNews,
-aside#right-column dl.portlet-static-faq,
-aside#right-column dl.portlet-static-coordonnees,
-aside#right-column dl.portlet-static-plan{
-width:95%;
-font-size:0.8em;
-border:1px solid #ddd;
-border-radius:12px 0px 0px 12px;
-margin:auto;
-margin-bottom:6px;
-background: -moz-linear-gradient(-45deg,  rgba(198,196,197,0.5) 0%, rgba(127,125,126,0) 36%, rgba(0,0,0,0) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(198,196,197,0.5)), color-stop(36%,rgba(127,125,126,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(-45deg,  rgba(198,196,197,0.5) 0%,rgba(127,125,126,0) 36%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(-45deg,  rgba(198,196,197,0.5) 0%,rgba(127,125,126,0) 36%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(-45deg,  rgba(198,196,197,0.5) 0%,rgba(127,125,126,0) 36%,rgba(0,0,0,0) 100%); /* IE10+ */
-background: linear-gradient(135deg,  rgba(198,196,197,0.5) 0%,rgba(127,125,126,0) 36%,rgba(0,0,0,0) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80c6c4c5', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-
-.portlet-static-coordonnees,
-.portlet-static-faq,
-#portlet-plan{
-padding-left:8px;
-min-height:150px;
-}
-
-aside#right-column dt.portletHeader,
-aside#right-column .portlet-static-coordonnees.portletHeaderDB,
-aside#right-column .portlet-static-faq.portletHeaderDB,
-aside#right-column #portlet-plan.portletHeaderDB{
-border-radius:12px 0px 0px 12px;
-background-color:transparent;
-color:#9d0003;
-}
-
-.portlet-static-coordonnees h2,
-.portlet-static-faq h2,
-#portlet-plan h2{
-height:28px;
-color:#9d0003;
-line-height:26px;
-/*border-bottom:1px dotted #555;*/
-font-size:1em;
-margin:5px 0px 5px 0px;
-padding-left:6px;
-}
-
-
-.portlet-static-coordonnees p,
-.portlet-static-faq p,
-#portlet-plan p{
-margin:5px 0px;
-}
-
-#coord-adresse,
-#coord-telephone,
-#coord-fax,
-#coord-email,
-#coord-heures-ouvertures{
-background-repeat:no-repeat;
-background-position:left center;
-padding-left:35px;
-height:30px;
-}
-
-#coord-adresse{
-background-image:url(../images/icone_maison.png);
-}
-
-#coord-telephone{
-background-image:url(../images/icone_telephone.png);
-line-height:30px;
-
-}
-
-#coord-fax{
-background-image:url(../images/icone_fax.png);
-line-height:30px;
-
-}
-
-#coord-email{
-background-image:url(../images/icone_enveloppe.png);
-line-height:30px;
-
-}
-
-#coord-heures-ouvertures{
-background-image:url(../images/icone_horloge.png);
-line-height:30px;
 }
 
 
